@@ -3,14 +3,14 @@
     flex-wrap: wrap;
     width: 800px;
     height: 800px;
-    border: solid 2px black;
+    border: solid 1px #3d3d3d;
 }
 
 .square {
     box-sizing: border-box;
     
     flex: 1 0 6.25%;
-    border: solid 2px black;
+    border: solid 1px #3d3d3d;
 }
 
 #button {
