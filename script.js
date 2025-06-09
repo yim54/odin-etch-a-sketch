@@ -25,6 +25,13 @@ function draw(event) {
     // check if mouse button is down
 
     if (mousedown) {
+        if (event.target.style.backgroundColor != "gray") {
+            event.target.style.opacity = 0.1;
+        } else {
+            if (event.target.style.opacity != 1) {
+                event.target.style.opacity += 0.1;
+            }
+        }
         event.target.style.backgroundColor = "gray";
     }
 }
