@@ -8,8 +8,9 @@ for (let i = 0; i < 16 * 16; i++) {
     grid.appendChild(square);
 }
 
-let mousedown = false;
+// check mouse click
 
+let mousedown = false;
 grid.addEventListener("mousedown", () => {
     mousedown = true;
 })
@@ -28,6 +29,8 @@ grid.addEventListener("mouseover", (event) => {
     }
 });
 
+// check mouse release
+
 document.addEventListener("mouseup", () => {
     mousedown = false;
 })
@@ -35,3 +38,4 @@ document.addEventListener("mouseup", () => {
 document.addEventListener("dragstart", (event)=> {
     event.preventDefault();
 })
+
